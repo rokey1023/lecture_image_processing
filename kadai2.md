@@ -5,16 +5,14 @@
     ORG=imread('nuko.png'); %   
     ORG = rgb2gray(ORG); colormap(gray); colorbar;  
     imagesc(ORG); axis image;   
-![原画像]
-(https://github.com/rokey1023/lecture_image_processing/blob/master/result/kadai2/k2_1.png?raw=true)
+![原画像](https://github.com/rokey1023/lecture_image_processing/blob/master/result/kadai2/k2_1.png?raw=true)
 図1　原画像
 
 ## 2階調表示
 以下のコードにより、輝度値が128より高い画素を1(白)、それ以外を0(黒)とした2階調の画像が生成される。
      IMG = ORG>128;     
 生成された2階調の画像を図2に示す。
-![2階調の画像]
-(https://github.com/rokey1023/lecture_image_processing/blob/master/result/kadai2/k2_2.png?raw=true)
+![2階調の画像](https://github.com/rokey1023/lecture_image_processing/blob/master/result/kadai2/k2_2.png?raw=true)
 図2　2階調の画像
 
 ## 4階調表示
@@ -24,8 +22,7 @@
     IMG2 = ORG>192; 
     IMG = IMG0 + IMG1 + IMG2;   
 生成された4階調の画像を図3に示す。
-![4階調の画像]
-(https://github.com/rokey1023/lecture_image_processing/blob/master/result/kadai2/k2_3.png?raw=true)
+![4階調の画像](https://github.com/rokey1023/lecture_image_processing/blob/master/result/kadai2/k2_3.png?raw=true)
 図3　4階調の画像
 
 
@@ -40,6 +37,5 @@
     IMG6 = ORG>224; 
     IMG = IMG0 + IMG1 + IMG2 + IMG3 + IMG4 + IMG5 + IMG6;   
 生成された4階調の画像を図4に示す。
-![2階調の画像]
-(https://github.com/rokey1023/lecture_image_processing/blob/master/result/kadai2/k2_4.png?raw=true)
+![2階調の画像](https://github.com/rokey1023/lecture_image_processing/blob/master/result/kadai2/k2_4.png?raw=true)
 図4　8階調の画像
