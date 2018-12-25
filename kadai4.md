@@ -6,14 +6,14 @@
   ORG = rgb2gray(ORG); colormap(gray); colorbar;  
   imagesc(ORG); axis image; 
 ```
-![原画像](https://github.com/rokey1023/lecture_image_processing/blob/master/result/kadai4/k4_1.png) 
+![原画像](https://github.com/rokey1023/lecture_image_processing/blob/master/result/kadai4/k4_1.png)  
 図1　原画像の白黒表示
 
 ## ヒストグラムの表示
-以下のコードにより、画像のヒストグラムを表示する。
+以下のコードにより、画像のヒストグラムを表示する。ヒストグラムを図2に示す。 
 ```
   imhist(ORG); % ヒストグラムの表示  
 ```
-ヒストグラムを図2に示す。
+
 ![ヒストグラム](https://github.com/rokey1023/lecture_image_processing/blob/master/result/kadai4/k4_2.png)  
 図2　ヒストグラム
